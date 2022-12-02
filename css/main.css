@@ -1,13 +1,13 @@
 /* CSS STRUCTURE TEMPLATE */
 .selector {
-    /* POSITIONING */
+    /* POSITIONING
     position: absolute, relative, fixed, etc;
     z-index: 10;
     top: 0;
     right: 0;
     
     /* DISPLAY & BOX MODEL */
-    display: block, flex, etc;
+    /* display: block, flex, etc;
     overflow: visible, hidden, scroll, etc;
     box-sizing: border-box, etc;
     width: - - -;
@@ -15,17 +15,369 @@
     padding: 10px 10px;
     border: 0 solid color;
     margin: - - - ;
-   
+    */
     /* COLOR */
-    background: - - - ;
+    /* background: - - - ;
     color: - - - ;
- 
+  */
     /* TEXT */
-    font-family: - - - ;
+    /* font-family: - - - ;
     font-size: - - - ;
     line-height: - - - ;
-    text-align: - - - ;
+    text-align: - - - ; */
  
     /* OTHER */
-    cursor: - - - ;
+    /* cursor: - - - ; */ 
+}
+
+*{
+    /* padding: 0; */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.center{
+    
+    text-align: center;
+}
+.description{
+    display: flex;
+    justify-content: space-evenly;
+}
+.download{
+    border:solid white;
+    background-color:#FF7630;
+    color: white;
+    padding: 10px;
+
+}
+.download-container{
+    padding-top: 45px;
+}
+footer{
+    padding-top: 80px;
+    
+}
+.footer-address {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: black;
+    letter-spacing: 3px;
+    background-color: white;
+    height: 200px;
+    font-size: 22px;
+    padding-bottom: 20px;
+    
+}
+.footer-country {
+    color: #FF7630;
+    font-family: 'Roboto';
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.footer-copyright {
+    text-align:center;
+    color: black;
+    letter-spacing: 3px;
+    background-color: white;
+    padding-bottom: 20px;
+    font-size: 10px;
+    
+    
+
+}
+
+form{
+    margin:auto;
+    text-align: center;
+    background-color: white;
+    padding: 100px;
+}
+.form-container {
+    display: block;
+    
+}
+form h1 {
+    color: black;
+    font-size: 25px;
+
+}
+form h2 {
+    color:#FF7630;
+    font-size: 45px;
+}
+.form-text {
+   margin-right:35%;
+  
+    
+}
+.form-separator {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+header{
+    position:absolute;
+    width: 100%;
+    top:1rem;
+}
+
+header li a{
+    text-decoration: none;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/main_image.png"); /* The image used */
+    /* background-color: #cccccc1d; Used if the image is unavailable */
+    /* height: 100px; You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: white;
+    padding-bottom: 200px;
+   
+  }
+.hero-container{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    align-items: center;
+    /* justify-content: center; */
+    
+}
+.hero-container .info {
+    margin-top: 650px;
+}
+.hero-container .info h1{
+    
+    font-size: 51px;
+}
+
+.hero-container .info h2{
+    
+    font-size: 79px; 
+}
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+label{
+    font-size: 15px;
+}
+.language{
+    width:48%;
+    /* padding: 0 200px; */
+   text-align: left;
+}
+.language select {
+    padding-top: 5px;
+    width: 38%;
+    height: 50%;
+    margin-top: 10px;
+    /* left: 200px; */
+
+}
+.main_image {
+    
+    width: 100%;
+    object-fit: fill;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.69);
+    color: white;
+    width: 100%;
+    height: 68px;
+    
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    list-style: none;
+    padding-top: 25px;
+}   
+
+.nav-links {
+
+    color: white;
+    
+    padding-right: 50px;
+    padding-bottom: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.phone {
+    position: relative;
+    left: 135px;
+    width: 40%;
+    padding: 0 50px ;
+    
+}
+.phone input {
+    position: relative;
+    padding-left: 30px;
+    left: 50px;
+   
+}
+
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    color: black;
+    text-align: center;
+    
+}
+.product-description-text {
+    margin:auto;
+    display: inline;
+    padding: 50px;
+ 
+
+}
+.product-description-text h1 {
+    
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.product-description-text h2 {
+    
+    font-size: 36px;
+    font-weight: 900;
+
+}
+.product-description-text h3{
+    
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.product-description-image{
+    
+    padding: 50px;
+
+}
+
+#product-line {
+    background-color: #FF7630; 
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.product-im-text {
+    background-color: white;
+    width: 255px;
+    
+   
+}
+
+.product-line-text h1{
+    font-size: 25px;
+    font-weight: 700;
+
+}
+.product-line-text h2{
+    font-size: 45px;
+    font-weight: 900;
+
+}
+.product-line-image {
+    background-color: white;
+    width: 256px;
+    object-fit: cover;
+   
+}
+
+.product-line-im-text {
+    
+    background-color: white;
+    padding-bottom: 10px;
+    width: 256px;
+    word-wrap: break-word;
+    
+   
+}
+.product-line-image2 {
+    
+    background-color: white;
+    padding-bottom: 10px;
+    width: 256px;
+    word-wrap: break-word;
+    
+   
+}
+
+
+.product-separator {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+}
+#submit {
+    padding-top:30px;
+}
+.submit-button{
+    padding: 10px 248px;
+   
+}
+.trust {
+    color: #FF7630;
+    font-size: 45px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.trust-padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.trust-padding-text{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#Why-Us {
+    background-color: #383838; 
+    color:white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#Why-Us h1 {
+    font-size: 25px;
+}
+#Why-Us h2 {
+    font-size: 45px;
+}
+
+.Why-Us-Pics {
+    display: flex; 
+    justify-content: space-evenly;
+    padding-top: 100px;
 }
