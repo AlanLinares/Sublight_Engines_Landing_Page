@@ -50,42 +50,65 @@
     background-color:#FF7630;
     color: white;
     padding: 10px;
-
+    font-size: 18px;
+    font-weight: 700;
 }
 .download-container{
     padding-top: 45px;
 }
-footer{
+/* footer{
     padding-top: 80px;
     
-}
+} */
 .footer-address {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    color: black;
-    letter-spacing: 3px;
-    background-color: white;
-    height: 200px;
-    font-size: 22px;
-    padding-bottom: 20px;
+    padding: 5% 3%
     
 }
-.footer-country {
-    color: #FF7630;
-    font-family: 'Roboto';
-    font-size: 15px;
-    padding-bottom: 10px;
+.footer-country-US {
+    text-align: left;
 }
-
+.footer-country-CA {
+    text-align: right;
+}
+.footer-country-US h1{
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF7630;
+    padding-bottom: 20px;
+}
+.footer-country-US h2{
+    font-size: 22px;
+    font-weight: 400;
+}
+.footer-country-US h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-country-CA h1{
+    font-size: 15px;
+    font-weight: 700;
+    color: #FF7630;
+    padding-bottom: 20px;
+}
+.footer-country-CA h2{
+    font-size: 22px;
+    font-weight: 400;
+}
+.footer-country-CA h3{
+    font-size: 22px;
+    font-weight: 700;
+}
 .footer-copyright {
+    padding-top: 1%;
     text-align:center;
     color: black;
     letter-spacing: 3px;
     background-color: white;
     padding-bottom: 20px;
     font-size: 10px;
-    
+    font-weight: 400;
     
 
 }
@@ -95,6 +118,7 @@ form{
     text-align: center;
     background-color: white;
     padding: 100px;
+    
 }
 .form-container {
     display: block;
@@ -111,8 +135,12 @@ form h2 {
 }
 .form-text {
    margin-right:35%;
-  
+   
     
+}
+.form-text-input {
+    border-radius: 0;
+    border: 1px solid black;
 }
 .form-separator {
     padding-top: 20px;
@@ -156,11 +184,13 @@ header li a{
 .hero-container .info h1{
     
     font-size: 51px;
+    font-weight: 800;
 }
 
 .hero-container .info h2{
     
-    font-size: 79px; 
+    font-size: 79px;
+    font-weight: 900; 
 }
 input[type=text] {
     width: 40%;
@@ -182,6 +212,9 @@ label{
     height: 50%;
     margin-top: 10px;
     /* left: 200px; */
+    background-color: white;
+    border-radius: 0;
+    border: 1px solid black;
 
 }
 .main_image {
@@ -269,7 +302,7 @@ label{
 .product-description-text h3{
     
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
 
 }
 
@@ -316,8 +349,17 @@ label{
     padding-bottom: 10px;
     width: 256px;
     word-wrap: break-word;
+    font-size: 20px;
+    font-weight: 700;
+}
+.product-line-im-text h1{
     
-   
+    background-color: white;
+    padding-bottom: 10px;
+    width: 256px;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: 400;
 }
 .product-line-image2 {
     
@@ -346,6 +388,8 @@ label{
 }
 .submit-button{
     padding: 10px 248px;
+    background-color: white;
+    border: 1px solid black;
    
 }
 .trust {
@@ -362,6 +406,8 @@ label{
 .trust-padding-text{
     padding-top: 90px;
     padding-bottom: 90px;
+    font-size: 45px;
+    font-weight: 900;
 }
 #Why-Us {
     background-color: #383838; 
@@ -371,13 +417,21 @@ label{
 }
 #Why-Us h1 {
     font-size: 25px;
+    font-weight: 700px;
 }
 #Why-Us h2 {
     font-size: 45px;
+    font-weight: 90px;
 }
 
 .Why-Us-Pics {
     display: flex; 
     justify-content: space-evenly;
     padding-top: 100px;
+}
+.Why-Us-Text {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 30px;
 }
