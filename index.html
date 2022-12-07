@@ -8,13 +8,13 @@
     <title></title>
     <meta name="description" content="">
     
-    <script src="js/main.js"></script> 
+    <script src="js/main.js"defer></script> 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/main.css">    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
@@ -27,7 +27,7 @@
         <div class = "nav-bar">
             <img src = "assets/logo_sublight.svg" alt = "logo_sublight">
 
-            <div class = "nav-container">
+            <div id = "nav-container">
                 
                     <a href = "#" class = "nav-links">Our Services</a>
                 
@@ -244,7 +244,7 @@
     <!---------------------------------------------------------------------PRODUCT LINE ENDS---------------------------------------------->
 
 <!---------------------------------------------------------------------FORM/CONTACT STARTS---------------------------------------------->
-    <form>
+    <form name = "myForm" >
         
             <h1>STAY IN TOUCH WITH OUR CUSTOMER SERVICE</h1>
             
@@ -254,23 +254,23 @@
         
         <div class = "form-container">
             
-            <div id = "name" >
+            <div id = "fullName1" class = "fullName1" >
                 
-                <label class = "form-text" for = "name">Name*</label></br>
-                <input required type = "text" class = "form-text-input" name="name" id="name" placeholder="Enter your full name">
+                <label class = "form-text" for = "fullName">Name*</label></br>
+                <input type = "text" class = " fullName1 form-text-input" name="fullName" id="fullName" placeholder="Enter your full name" required>
                 
             </div>
 
             <div id = "email" >
                 
-                    <label class = "form-text" for = "email">E-mail*</label></br>
-                    <input required type = "text" class = "form-text-input" name="email" id="email" placeholder="yourname@company.com">
+                <label class = "form-text" for = "email">E-mail*</label></br>
+                <input type = "text" class = "form-text-input" name="email" id="email" placeholder="yourname@company.com">
                 
             </div>
             <div class = "row" >
                 <div class = "phone">
-                        <label for = "phone">Phone Number</label></br>
-                        <input type = "text" class = "form-text-input" name="phone" placeholder="0 (000) 000-0000">
+                    <label for = "phone">Phone Number</label></br>
+                    <input type = "text" class = "form-text-input" id = "phone" name="phone" placeholder="0 (000) 000-0000">
                 </div>
 
                 <div class = "language">
@@ -286,7 +286,7 @@
                 </div>
             </div>
             <div id = "submit">
-                <button class = "submit-button" type = "submit">Submit</button>
+                <button class = "submit-button" id = "submit" type = "submit">Submit</button>
             </div>
         </div>
     
@@ -333,6 +333,6 @@
     <!---------------------------------------------------------------------FOOTER ENDS---------------------------------------------->
 
     <!-- SCRIPTS -->
-    <script src="" async defer></script>
+    <!-- <script src="" async defer></script> -->
 </body>
 </html>

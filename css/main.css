@@ -232,8 +232,10 @@ label{
     height: 68px;
     
 }
-
-.nav-bar ul {
+.nav-bar .icon{
+    display: none;
+}
+#nav-container {
     display: flex;
     justify-content: space-around;
     align-items: right;
@@ -588,6 +590,7 @@ label{
     .form-text-input {
         border-radius: 0;
         border: 1px solid black;
+        
     }
     .form-separator {
         padding-top: 20px;
@@ -671,7 +674,7 @@ label{
         width: 100%;
         object-fit: fill;
     }
-    #name{
+    .fullName1{
         width: 98%;
         text-align: left;
     }
@@ -681,7 +684,7 @@ label{
         background-color: rgba(0,0,0,.69);
         color: white;
         width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
         position: relative;
         padding-top: 30px;
     }
@@ -689,11 +692,25 @@ label{
         width: 50%;
     }
     
-    /* .nav-bar ul {
+    .nav-bar #nav-container {
         
         display: none;
-          
-    }    */
+        width: 100%;
+        position: absolute;
+        margin-top: 40px;
+        padding-bottom: 500px;
+        
+           
+    }
+    .nav-bar a{
+        color: white;
+        padding: 20px 20px 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-align: left;
+        
+    }   
     .nav-bar a.icon {
         /* background: black; */
         display: block;
@@ -705,12 +722,14 @@ label{
     }
     .nav-links {
     
-        width: 30%;
-        /* padding: 14px 16px; */
+        /* width: 100%; */
+      
         text-decoration: none;
         font-size: 16px;
-        display: block;
-    
+        /* display: block; */
+        background-color: rgba(0,0,0,.69);
+        outline-color: white;
+        /* line-height: 18.75px; */
     }
     .phone {
         /* position: relative; */
@@ -725,13 +744,10 @@ label{
     .phone input {
         width: 98%;
         display: block;
-        align-items: flex-start;
+        align-items: left;
         text-align: left;
         left: 0;
-        /* position: relative; */
-        /* padding-left: 30px; */
-        /* left: 50px; */
-       
+        
     }
     
     .product{
@@ -863,10 +879,11 @@ label{
         /* display: block; */
         /* align-items: left; */
         /* margin-right: 200px; */
+        padding-bottom: 10px;
     }
     .submit-button{
         width: 100%;
-        padding: 10px 0;
+        padding:0;
         /* background-color: white; */
         /* border: 1px solid black; */
        
