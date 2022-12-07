@@ -8,8 +8,12 @@
     <title></title>
     <meta name="description" content="">
     
+    <script src="js/main.js"></script> 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/main.css">    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +42,9 @@
                 </li>
                 
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </div><!--end of nav-bar-->
     </header>
     <!---------------------------------------------------------------------HEADER/NAV BAR ENDS---------------------------------------------->
@@ -48,7 +55,7 @@
             <div class = " info center">
                 <h1>OUR MISSION</h1>
                 <h2>TAKE YOU TO THE TOP</h2>
-                <img src = "assets/elevator button.png" alt = "">
+                <img class = "elevator" src = "assets/elevator button.png" alt = "">
             </div>
         </div>
     </div>
@@ -108,7 +115,7 @@
         </div>
          
             <div class = "product">
-                <div>
+                <div class = "product-card">
                     <div class="product-line-image" >
                         <a><!-- <a href="https://www.dispatch.com/story/business/real-estate/2022/09/21/zillow-gone-wild-features-powell-home-with-indoor-basketball-court/69504569007/"> -->
                             <img class="img-fluid" src="assets/product_1.png" alt="">
@@ -132,7 +139,7 @@
                     </div>
                 </div><!--PRODUCT 1-->
 
-                <div>
+                <div class = "product-card">
                     <div class="product-line-image" >
                         <a><!-- <a href="https://www.dispatch.com/story/business/real-estate/2022/09/21/zillow-gone-wild-features-powell-home-with-indoor-basketball-court/69504569007/"> -->
                             <img class="img-fluid" src="assets/product_2.png" alt="">
@@ -156,7 +163,7 @@
                     </div>
                 </div><!--PRODUCT 2-->
                 
-                <div>
+                <div class = "product-card">
                     <div class="product-line-image" >
                         <a><!-- <a href="https://www.dispatch.com/story/business/real-estate/2022/09/21/zillow-gone-wild-features-powell-home-with-indoor-basketball-court/69504569007/"> -->
                             <img class="img-fluid" src="assets/product_3.png" alt="">
@@ -180,7 +187,7 @@
                     </div>
                 </div><!--PRODUCT 3-->
 
-                <div>
+                <div class = "product-card">
                     <div class="product-line-image" >
                         <a><!-- <a href="https://www.dispatch.com/story/business/real-estate/2022/09/21/zillow-gone-wild-features-powell-home-with-indoor-basketball-court/69504569007/"> -->
                             <img class="img-fluid" src="assets/product_4.png" alt="">
@@ -204,7 +211,7 @@
                     </div>
                 </div><!--PRODUCT 4-->
 
-                <div>
+                <div class = "product-card">
                     <div class="product-line-image" >
                         <a><!-- <a href="https://www.dispatch.com/story/business/real-estate/2022/09/21/zillow-gone-wild-features-powell-home-with-indoor-basketball-court/69504569007/"> -->
                             <img class="img-fluid" src="assets/product_5.png" alt="">
@@ -242,12 +249,12 @@
 <!---------------------------------------------------------------------FORM/CONTACT STARTS---------------------------------------------->
     <form>
         
-        <h1>STAY IN TOUCH WITH OUR CUSTOMER SERVICE</h1>
-         
-        <h2>FEEL FREE TO CONTACT US </br> FOR ANY QUESTIONS</h2>
+            <h1>STAY IN TOUCH WITH OUR CUSTOMER SERVICE</h1>
+            
+            <h2>FEEL FREE TO CONTACT US </br> FOR ANY QUESTIONS</h2>
 
-        <img class = "form-separator" src = "assets/separator.png">
-
+            <img class = "form-separator" src = "assets/separator.png">
+        
         <div class = "form-container">
             
             <div id = "name" >
