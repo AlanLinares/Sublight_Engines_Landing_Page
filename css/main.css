@@ -694,6 +694,7 @@ label{
 
     .nav-bar {
         display: flex;
+        
         /* justify-content: space-between; */
         background-color: rgba(0,0,0,.69);
         color: white;
@@ -711,13 +712,15 @@ label{
         display: none;
         width: 100%;
         position: absolute;
-        margin-top: 40px;
-        padding-bottom: 500px;
+        margin-top: 68px;
+        padding-bottom: 20px;
+        background-color: rgba(0,0,0,.69);
         
            
     }
     .nav-bar a{
         color: white;
+        
         padding: 20px 20px 0;
         text-decoration: none;
         font-size: 17px;
@@ -737,11 +740,11 @@ label{
     .nav-links {
     
         /* width: 100%; */
-      
+        outline: solid 1px white;
         text-decoration: none;
         font-size: 16px;
         /* display: block; */
-        background-color: rgba(0,0,0,.69);
+        /* background-color: rgba(0,0,0,.69); */
         outline-color: white;
         /* line-height: 18.75px; */
     }
