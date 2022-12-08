@@ -33,81 +33,99 @@ function myFunction() {
 
 const fname = document.getElementById("fullName1");
 const email = document.getElementById("email1");
-var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const phone = document.getElementById("phone1");
 var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 const language = document.getElementById("language1");
 
 
 document.getElementById("submit").addEventListener("click", function(e){
+   
+    if (validateName(e) && validateEmail(e) && validatePhone(e) && validateLanguage(e)){
+        alert("Form uploaded successfully. Thank you")
+    }
+})//full form check, calling other methods per input to check
+
+function validateName(e){
     console.log(fname.value);
     if (fname.value == ""){
         console.log("option 1");
         alert("Please provide your name");
-       
+        document.myForm.Name.focus();
+        e.preventDefault();
         return false;
         
     }
     else if ((fname.value.length < 3) || (fname.value.length > 25)){
         console.log("option 2");
         alert("Name must be between 3 and 25 characters");
-       
+        document.myForm.Name.focus();
+        e.preventDefault();
         return false;
     }
+    else
+        return true;
+}
 
-})//name check
-
-document.getElementById("submit").addEventListener("click", function(e){
+function validateEmail(e){
     console.log(email.value);
     if (email.value == ""){
         console.log("option 1");
         alert("Please provide an email. Field required");
-       
+        document.myForm.Email.focus();
+        e.preventDefault();
         return false;
         
     }
     else if (!(email.value.match(mailformat))) {
         console.log("option 2");
         alert("Please enter correct email ID");
-        
+        document.myForm.Email.focus();
+        e.preventDefault();
         return false;
     }
-    
+    else
+        return true; 
+            
+}
 
-})//email check
-
-document.getElementById("submit").addEventListener("click", function(e){
+function validatePhone(e){
     console.log(phone.value);
     if (phone.value == ""){
         console.log("option 1");
         alert("Please provide a phone number");
-       
+        document.myForm.Phone.focus();
+        e.preventDefault();
         return false;
         
     }
     else if(!(phone.value.match(phoneno))){
         console.log("option 2");
         alert("Please enter a 10 digit phone number");
-        
+        document.myForm.Phone.focus();
+        e.preventDefault();
         return false;
+    }
+    else
+        return true;
 }
-       
 
-})//phone check
-
-document.getElementById("submit").addEventListener("click", function(e){
+function validateLanguage(e){
     console.log(language.value);
     if (language.value == ""){
         console.log("option 1");
         alert("Please choose a language");
-       
+        document.myForm.Language.focus();
+        e.preventDefault();
         return false;
         
     }
-   
-       
+    else 
+        return true;
+}
 
-})//language check
+
+
 
 // $("#submit").click (function() {
  
@@ -118,28 +136,3 @@ document.getElementById("submit").addEventListener("click", function(e){
 // }
 // })
 
-
-// document.addEventListener('submit', function(e){
-    function validateForm(){
-        
-        
-
-       
-
-        
-        // if(!(phone.value.match(phoneno))){
-            
-        //     alert("Please enter a 10 digit phone number please");
-        //     document.myForm.phone.focus();
-        //     return false;
-        //     }
-        // if(language == "---Select---"){
-        //     alert("Please select a language");
-        //     document.myForm.language.focus();
-        //     return false;
-        // }
-        
-        // alert("form submitted");
-        return true;
-    }//end of validateForm()   
-// })//end of event listener
