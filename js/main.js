@@ -115,7 +115,7 @@ function validateLanguage(e){
     if (language.value == ""){
         console.log("option 1");
         alert("Please choose a language");
-        document.myForm.Language.focus();
+        
         e.preventDefault();
         return false;
         

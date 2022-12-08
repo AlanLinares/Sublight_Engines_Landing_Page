@@ -202,9 +202,10 @@ label{
     font-size: 15px;
 }
 .language{
-    width:48%;
+    width:40%;
     /* padding: 0 200px; */
    text-align: left;
+   margin-right: 90px;
 }
 .language select {
     padding-top: 5px;
@@ -262,14 +263,18 @@ label{
 
 }
 .phone {
-    position: relative;
-    left: 135px;
-    width: 40%;
-    padding: 0 50px ;
+    /* position: relative; */
+    display: block;
+    width: 50%;
+    margin-left: 115px;
+    padding-left: 50px;
     
 }
+.phone label{
+    /* padding-left: 50px; */
+}
 .phone input {
-    position: relative;
+    /* position: relative; */
     padding-left: 30px;
     left: 50px;
    
@@ -387,10 +392,10 @@ label{
     
 }
 #submit {
-    padding-top:30px;
+    padding-top:10px;
 }
 .submit-button{
-    padding: 10px 248px;
+    padding: 10px 180px;
     background-color: white;
     border: 1px solid black;
    
@@ -666,6 +671,7 @@ label{
         width:98%;
         display:block;
         align-items: left;
+        padding-bottom: 30px;
         /* padding: 0 200px; */
        /* text-align: left; */
     }
@@ -678,7 +684,7 @@ label{
         background-color: white;
         border-radius: 0;
         border: 1px solid black;
-    
+        
     }
     .main_image {
         
@@ -740,22 +746,26 @@ label{
         /* line-height: 18.75px; */
     }
     .phone {
-        /* position: relative; */
+        /* position:relative; */
          /* display: block; */
          /* justify-content:center; */
         width: 100%;
         text-align: left;
         align-items: left;
         padding: 0;
-        left: 0;
+        margin-left: 3px;
     }
     .phone input {
         width: 98%;
         display: block;
         align-items: left;
         text-align: left;
-        left: 0;
+      
+       
+    }
+    .phone label{
         
+        padding: 2px;
     }
     
     .product{
