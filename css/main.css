@@ -56,6 +56,7 @@
 .download-container{
     padding-top: 45px;
 }
+
 /* footer{
     padding-top: 80px;
     
@@ -451,7 +452,20 @@ label{
         margin: 0;
         font-family: 'Roboto', sans-serif;
     }
-    
+    html{
+        cursor: none;
+    }
+    #circularcursor {
+        background-color:  rgba(252, 252, 252, 0.69);
+        border:1px solid white;    
+        height:50px;
+        width:50px;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%; 
+         position: absolute;
+        z-index: 1;
+      }
     
     .center{
         
@@ -470,13 +484,17 @@ label{
         padding: 10px;
         font-size: 18px;
         font-weight: 700; */
-        background-color: rgba(0,0,0,.69);
+        background-color:transparent;
         border: solid white;
         display: block;
         width: 70%;
        
         
        
+    }
+    .download:hover{
+        background-color: whitesmoke;
+        color: black;
     }
     .download-container{
        width: 100%;
